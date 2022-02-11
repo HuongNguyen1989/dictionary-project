@@ -10,7 +10,7 @@ export default function Meaning(props) {
             <p className="mt-3">
               {index + 1} - {definition.definition}
               <br />
-              <em>{definition.example}</em>
+              <em>Example: {definition.example}</em>
             </p>
           </div>
         );
