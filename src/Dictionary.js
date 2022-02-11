@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function () {
+export default function Dictionary() {
   const [keyword, setKeyword] = useState(null);
 
   function change(event) {
