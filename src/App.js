@@ -5,7 +5,7 @@ import Dictionary from "./Dictionary";
 function App() {
   return (
     <div className="App">
-      <header className="App-header mt-3">
+      <header className="App-header pt-3">
         <img src={logo} className="App-logo img-fluid" alt="logo" />
       </header>
       <main>
