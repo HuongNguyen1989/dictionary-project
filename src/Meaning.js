@@ -2,19 +2,20 @@ import React from "react";
 import Synonyms from "./Synonyms";
 
 export default function Meaning(props) {
+  function capitalizeFistLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
   return (
     <div className="Meaning">
-      <h4> {props.meaning.partOfSpeech}</h4>
+      <h4> {capitalizeFistLetter(props.meaning.partOfSpeech)}</h4>
       {props.meaning.definitions.map(function (definition, index) {
         return (
           <div key={index}>
             <p>
-              <strong>Definition:</strong> {definition.definition}
+              🔆 {definition.definition}
               <br />
-              <em>
-                <strong>Example:</strong>
-                {definition.example}
-              </em>
+              <em>{definition.example}</em>
             </p>
             <Synonyms synonym={definition.synonyms} />
           </div>

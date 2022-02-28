@@ -2,12 +2,12 @@
   background-color: #ffffff;
   border-radius: 6px;
   padding: 20px;
-  box-shadow: 5px 5px 5px rgb (0, 0, 0.3);
+  box-shadow: 5px 5px 5px rgb (0, 0, 0.7);
   margin: 30px 0;
 }
 
 .Dictionary {
-  background-color: #f7f9fd;
+  background-color: #f7f3ff;
 }
 
 .Dictionary input {
@@ -20,4 +20,9 @@
 
 .Dictionary .heading-text {
   margin: 10px;
+}
+
+.Dictionary em {
+  margin-left: 25px;
+  color: rgb(100, 96, 96);
 }
