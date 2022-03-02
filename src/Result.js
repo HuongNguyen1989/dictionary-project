@@ -3,6 +3,7 @@ import Meaning from "./Meaning";
 import Phonetic from "./Phonetic";
 
 export default function Result(props) {
+  console.log(props.result.phonetics);
   if (props.result) {
     return (
       <div className="Result mt-1">
@@ -12,6 +13,7 @@ export default function Result(props) {
             {props.result.phonetics.map(function (phonetic, index) {
               return (
                 <div key={index}>
+                  {phonetic.text}
                   <Phonetic phonetic={phonetic} />
                 </div>
               );
